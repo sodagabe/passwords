@@ -11,7 +11,7 @@
     />
     <title>Passwords</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/main.js" type="module" defer></script>
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <section id="main">
@@ -34,6 +34,7 @@
             min="0"
             max="100"
             value="12"
+            required
           />
           <label class="checkbox-container">
             <input
@@ -47,13 +48,11 @@
           <label class="checkbox-container">
             <input
               type="checkbox"
-              name="special-toggle"
-              id="special-toggle"
+              name="symbols-toggle"
+              id="symbols-toggle"
               checked
             />
-            <span aria-label="Include special characters"
-              >Include special characters</span
-            >
+            <span aria-label="Include symbols">Include symbols</span>
           </label>
           <button class="btn" id="generate">Generate passwords</button>
         </form>
@@ -66,7 +65,6 @@
             class="input"
             name="password-a"
             id="password-a"
-            value="eg<xWij@veiPUwK"
             readonly
           />
           <button class="btn btn--outlined btn--icon">
@@ -79,7 +77,18 @@
             class="input"
             name="password-b"
             id="password-b"
-            value="eg<xWij@veiPUwK"
+            readonly
+          />
+          <button class="btn btn--outlined btn--icon">
+            <span class="icon-copy"></span>Copy
+          </button>
+        </div>
+        <div class="input-copy">
+          <input
+            type="text"
+            class="input"
+            name="password-c"
+            id="password-c"
             readonly
           />
           <button class="btn btn--outlined btn--icon">
