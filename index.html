@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Climate+Crisis&display=swap"
+      rel="stylesheet"
+    />
+    <title>Passwords</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <section id="main">
+      <article class="hero">
+        <div class="hero__heading">
+          <h1>
+            Generate a
+            <span class="text--hero text--graphic">random password</span>
+          </h1>
+          <p>Never use an insecure password again</p>
+        </div>
+        <form action="">
+          <!-- <label for="length">Length</label> -->
+          <input
+            type="number"
+            class="input"
+            name="length"
+            id="length"
+            placeholder="Length"
+            min="0"
+            max="100"
+            value="12"
+          />
+          <label class="checkbox-container">
+            <input
+              type="checkbox"
+              name="numbers-toggle"
+              id="numbers-toggle"
+              checked
+            />
+            <span aria-label="Include numbers">Include numbers</span>
+          </label>
+          <label class="checkbox-container">
+            <input
+              type="checkbox"
+              name="special-toggle"
+              id="special-toggle"
+              checked
+            />
+            <span aria-label="Include special characters"
+              >Include special characters</span
+            >
+          </label>
+          <button class="btn" id="generate">Generate passwords</button>
+        </form>
+      </article>
+      <hr class="line-divider" />
+      <article class="passwords">
+        <div class="input-copy">
+          <input
+            type="text"
+            class="input"
+            name="password-a"
+            id="password-a"
+            value="eg<xWij@veiPUwK"
+            readonly
+          />
+          <button class="btn btn--outlined btn--icon">
+            <span class="icon-copy"></span>Copy
+          </button>
+        </div>
+        <div class="input-copy">
+          <input
+            type="text"
+            class="input"
+            name="password-b"
+            id="password-b"
+            value="eg<xWij@veiPUwK"
+            readonly
+          />
+          <button class="btn btn--outlined btn--icon">
+            <span class="icon-copy"></span>Copy
+          </button>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
