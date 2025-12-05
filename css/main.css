@@ -109,11 +109,6 @@ form {
   color: transparent;
 }
 
-.checkbox-container {
-  display: flex;
-  gap: 5rem;
-}
-
 .passwords {
   display: flex;
   flex-direction: column;
@@ -226,7 +221,7 @@ input[type="checkbox"] + span::before {
   width: 1.5rem;
   height: 1.5rem;
   background: var(--input-background-color);
-  vertical-align: text-bottom;
+  vertical-align: middle;
   content: "";
 }
 
